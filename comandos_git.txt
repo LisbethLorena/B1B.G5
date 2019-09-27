@@ -1,0 +1,11 @@
+git clone----->descargar el repositorio primera vez.
+----------Opcional-------------
+git config --global user.email "you@example.com"
+git config --global user.name "Tu Nombre"
+-------------------------------
+git add .
+git commit -m "comentario"
+git push origin master--------->actualizar el repositorio.
+
+git pull origin master--------->descargar la ultima version.
+
