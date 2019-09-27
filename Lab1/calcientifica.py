@@ -1,5 +1,6 @@
 from calculadora import calcul
 import math
+import numpy
 
 class calcucientifica(calcul):
     def coseno(self, x):
@@ -12,3 +13,6 @@ class calcucientifica(calcul):
         print("raiz cuadrada de "+str(x)+" es: "+str(math.sqrt(x)))
     def factorial(self, x):
         print("Factorial de "+str(x)+" es: "+str(math.factorial(x)))
+    def media(self, x):
+        print("Media de "+str(x)+" es: "+str(numpy.mean(x)))
+        
