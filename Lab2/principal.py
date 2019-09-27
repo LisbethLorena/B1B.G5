@@ -14,6 +14,7 @@ def menu():
     print ("7-tangente")
     print ("8-Raiz cuadrada")
     print ("9-Factorial")
+    print ("10-Media")
     print ("0-salir")
     return int(input("introducir opcion: "))
 while(True):
@@ -36,6 +37,11 @@ while(True):
     elif(operacion==9):
         x=float(input("ingresar numero: "))
         calc.factorial(x)
+    elif(operacion==10):
+        s=input("ingresar vector: ")#float(input("ingresar vector: "))
+        sa=s[1:-1]
+        x=numpy.array([int(i) for i in sa.split(",") if i.isdigit()])
+        calc.media(x)
 	    
     else:
         x=float(input("ingresar numero: "))
