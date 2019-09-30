@@ -1,5 +1,4 @@
 from calcientifica import calcucientifica
-import numpy
 calc=calcucientifica()
 
 def menu():
@@ -14,7 +13,9 @@ def menu():
     print ("7-tangente")
     print ("8-Raiz cuadrada")
     print ("9-Factorial")
-    print ("10-Media")
+    print ("10-SumaVEC")
+    print ("11-RestaVEC")
+    print ("12-Media")
     print ("0-salir")
     return int(input("introducir opcion: "))
 while(True):
@@ -38,10 +39,21 @@ while(True):
         x=float(input("ingresar numero: "))
         calc.factorial(x)
     elif(operacion==10):
-        s=input("ingresar vector: ")#float(input("ingresar vector: "))
+        v1=input("ingresar Vector1: ")
+        v2=input("ingresar Vector2: ")
+        v1a=v1[1:-1]
+        v2a=v2[1:-1]
+        calc.sumavec(v1a,v2a)
+    elif(operacion==11):
+        v1=input("ingresar Vector1: ")
+        v2=input("ingresar Vector2: ")
+        v1a=v1[1:-1]
+        v2a=v2[1:-1]
+        calc.restavec(v1a,v2a)
+    elif(operacion==12):
+        s=input("ingresar vector: ")
         sa=s[1:-1]
-        x=numpy.array([int(i) for i in sa.split(",") if i.isdigit()])
-        calc.media(x)
+        calc.media(sa)
 	    
     else:
         x=float(input("ingresar numero: "))

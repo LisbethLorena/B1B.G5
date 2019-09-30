@@ -13,6 +13,15 @@ class calcucientifica(calcul):
         print("raiz cuadrada de "+str(x)+" es: "+str(math.sqrt(x)))
     def factorial(self, x):
         print("Factorial de "+str(x)+" es: "+str(math.factorial(x)))
-    def media(self, x):
+    def sumavec(self, v1a, v2a):
+        x=numpy.array([int(i) for i in v1a.split(",") if i.isdigit()])
+        y=numpy.array([int(i) for i in v2a.split(",") if i.isdigit()])
+        print("La suma es: "+str(x+y))
+    def restavec(self, v1a, v2a):
+        x=numpy.array([int(i) for i in v1a.split(",") if i.isdigit()])
+        y=numpy.array([int(i) for i in v2a.split(",") if i.isdigit()])
+        print("La resta es: "+str(x-y))
+    def media(self, sa):
+        x=numpy.array([int(i) for i in sa.split(",") if i.isdigit()])
         print("Media de "+str(x)+" es: "+str(numpy.mean(x)))
-        
+    
