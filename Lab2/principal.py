@@ -16,6 +16,9 @@ def menu():
     print ("10-SumaVEC")
     print ("11-RestaVEC")
     print ("12-Media")
+    print ("13-MediaCuadratica")
+    print ("14-Varianza")
+    print ("15-DesviacionEstandar")
     print ("0-salir")
     return int(input("introducir opcion: "))
 while(True):
@@ -54,6 +57,18 @@ while(True):
         s=input("ingresar vector: ")
         sa=s[1:-1]
         calc.media(sa)
+    elif(operacion==13):
+        s=input("ingresar vector: ")
+        ta=s[1:-1]
+        calc.mediacuadratica(ta)
+    elif(operacion==14):
+        s=input("ingresar vector: ")
+        ma=s[1:-1]
+        calc.varianza(ma)
+    elif(operacion==15):
+        s=input("ingresar vector: ")
+        na=s[1:-1]
+        calc.desviacionstd(na)
 	    
     else:
         x=float(input("ingresar numero: "))
