@@ -19,6 +19,7 @@ def menu():
     print ("13-MediaCuadratica")
     print ("14-Varianza")
     print ("15-DesviacionEstandar")
+    print ("16-Correlacion")
     print ("0-salir")
     return int(input("introducir opcion: "))
 while(True):
@@ -69,7 +70,12 @@ while(True):
         s=input("ingresar vector: ")
         na=s[1:-1]
         calc.desviacionstd(na)
-	    
+    elif(operacion==16):
+        v1=input("ingresar Vector1: ")
+        v2=input("ingresar Vector2: ")
+        v1a=v1[1:-1]
+        v2a=v2[1:-1]
+        calc.correlacion(v1a,v2a)
     else:
         x=float(input("ingresar numero: "))
         y=float(input("ingresar numero: "))
