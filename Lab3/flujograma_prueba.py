@@ -30,7 +30,7 @@ class my_top_block(gr.top_block):        # hereda de gr.top_block
          ampl = 0.5
  
          self.src0 = analog.sig_source_c(sample_rate, analog.GR_SIN_WAVE, 1000, ampl)
-         self.src1 = analog.sig_source_c(sample_rate, analog.GR_SIN_WAVE, 440, ampl)
+         self.src1 = analog.sig_source_c(sample_rate, analog.GR_SIN_WAVE, 500, ampl)
          self.add = blocks.add_cc()
          self.thr = blocks.throttle(gr.sizeof_gr_complex, sample_rate, True)
          self.snk = qtgui.sink_c(
